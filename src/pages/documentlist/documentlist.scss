@@ -1,0 +1,38 @@
+page-documentlist {
+    .ion-ios-arrow-forward {
+        vertical-align: middle;
+        float: right;
+    }
+    
+    .list-multi {
+        font-size: 12px;
+        font-weight: 300;
+        font-family: Montserrat;
+    }
+    
+    .head-multiple {
+        font-family: Montserrat;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding-left: 10px;
+        text-align: center;
+    }
+
+    .item-ios-light, .item-divider-ios-light{
+        color: #fff;
+    background-color: #d4ad5f;
+    font-weight: 600;
+    }
+
+    ion-icon.icon.icon-ios.ion-ios-document.item-icon {
+        margin-right: 6px;
+    }
+    
+    ion-icon.icon.icon-ios.ion-ios-albums.item-icon {
+        margin-right: 6px;
+    }
+
+    ion-icon.icon.icon-ios.ion-ios-clipboard.item-icon {
+        margin-right: 6px;
+    }
+}

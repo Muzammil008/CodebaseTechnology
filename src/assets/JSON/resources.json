@@ -1,0 +1,145 @@
+[
+    {
+        "id": 1,
+        "categories": "Corporate Profile",
+        "icon": "icomoon-file",
+        "isParent": "true",
+      
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School CSS3 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId": 2,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "categories": "Core Banking",
+        "icon": "icomoon-strongbox",
+        "isParent": "false",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "categories": "E-KYC",
+        "icon": "icomoon-call-center-girl",
+        "isParent": "true",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId":2,
+                "docTitle":"W3 School CSS3 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId": 3,
+                "docTitle":"W3 School Bootstrap Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "categories": "Agent Banking",
+        "icon": "icomoon-handshake",
+        "isParent": "false",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+          
+        ]
+    },
+    {
+        "id": 5,
+        "categories": "Digital Identity",
+        "icon": "icomoon-trump",
+        "isParent": "true",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId":2,
+                "docTitle":"W3 School CSS3 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId": 3,
+                "docTitle":"W3 School Bootstrap Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "categories": "Digital Payments",
+        "icon": "icomoon-wallet",
+        "isParent": "false",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+          
+        ]
+    },
+    {
+        "id": 7,
+        "categories": "Ai Banking",
+        "icon": "icomoon-cpu",
+        "isParent": "true",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId":2,
+                "docTitle":"W3 School CSS3 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            },
+            {
+                "docId": 3,
+                "docTitle":"W3 School Bootstrap Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+        ]
+    },
+    {
+        "id": 8,
+        "categories": "Product Videos",
+        "icon": "icomoon-youtube",
+        "isParent": "false",
+        "doc": [
+            {
+                "docId": 1,
+                "docTitle":"W3 School HTML5 Tutorial",
+                "docLink": "https://vadimdez.github.io/ng2-pdf-viewer/assets/pdf-test.pdf"
+            }
+          
+        ]
+    }
+]

@@ -1,0 +1,29 @@
+page-documentpreview {
+    .button-default {
+        width: 100%;
+        border-radius: 100px;
+        font-weight: 500;
+        font-size: 14px;
+        height: 3.5em;
+        text-transform: uppercase;
+        font-family: Montserrat;
+    }
+
+    .pre-pane {
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+        height: 500px;
+        max-width: 97%;
+        border: 1px solid #b3b3b3;
+        margin-left: 2%;
+        margin-top: 0px;
+        padding: 0px 18%;
+        background: #f2f3f2;
+    }
+
+    .gap {height: 18px;}
+
+  
+}
+

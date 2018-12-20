@@ -1,0 +1,38 @@
+page-contactreached {
+    ion-content {
+      
+        background-image: url(../assets/imgs/doneback.png) !important;
+    }
+
+
+    .done {
+        text-align: center;
+        margin-top: 20%;
+        h2{
+            font-size: $font-size-mainheading;
+    margin-bottom: 0px;
+    font-weight: 600;
+    color: #fff;
+        }
+
+        p{
+            font-size: $font-size-para;
+            margin-bottom: 0px;
+            font-weight: 600;
+            color: #fff;
+        }
+        .buttonsend {
+            margin-top: 50px;
+            button {
+                width: 90%;
+                padding: 25px;
+                font-size: $font-size-para;
+                border-radius: 12px;
+                background: #fff;
+                color:$color-themes; 
+                margin: 0 auto;
+                font-weight: 600;
+            }
+        }
+    }
+}

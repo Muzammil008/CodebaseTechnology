@@ -1,0 +1,84 @@
+<ion-header>
+  <ion-navbar><ion-title>Contact Us</ion-title></ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-navbar>
+             
+            </ion-navbar>
+  <div class="mailimge">
+  <img src="./assets/imgs/contantus.png">
+  <h2>Connect With Us</h2>
+  </div>
+            
+      <div class="form">
+          <form #contactForm="ngForm" (ngSubmit)="submitContactForm(contactForm)">
+          <ion-label stacked>Name</ion-label>
+          <ion-item>
+              
+              <ion-input type="text"  name="name" #nameref='ngModel'  required [(ngModel)]="name"></ion-input>
+            </ion-item>
+            <div *ngIf="nameref.errors && (nameref.dirty || nameref.touched)" class="error-label">
+                <div *ngIf="nameref.errors.required">
+                  Name is Required
+                </div>
+            </div>
+  
+            <ion-label stacked >Email</ion-label>
+            <ion-item>
+              <ion-input type="email" name="email" #emailref='ngModel'  required [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <div *ngIf="emailref.errors && (emailref.dirty || emailref.touched)" class="error-label">
+                <div *ngIf="emailref.errors.required">
+                  Email is Required
+                </div>
+            </div>
+  
+            <ion-label stacked>Mobile No.</ion-label>
+            <ion-item>
+             
+              <ion-input type="tel" name="mobilenumber" #mobilenumberref='ngModel' required [(ngModel)]="mobilenumber"></ion-input>
+            </ion-item>
+            <div *ngIf="mobilenumberref.errors && (mobilenumberref.dirty || mobilenumberref.touched)" class="error-label">
+                <div *ngIf="mobilenumberref.errors.required">
+                  Mobile Number is Required
+                </div>
+            </div>
+
+            <ion-label stacked>Subject</ion-label>
+            <ion-item>
+                
+                <ion-input type="text" name="subject" #subjectref='ngModel' required [(ngModel)]="subject"></ion-input>
+              </ion-item>
+              <div *ngIf="subjectref.errors && (subjectref.dirty || subjectref.touched)" class="error-label">
+                  <div *ngIf="subjectref.errors.required">
+                    Subject is Required
+                  </div>
+              </div>
+
+              <ion-label stacked>Message</ion-label>
+              <ion-item>
+                  
+                  <ion-textarea rows="4" cols="50"  name="message" #messageref='ngModel'  required [(ngModel)]="message"></ion-textarea>
+                </ion-item>
+                <div *ngIf="messageref.errors && (messageref.dirty || messageref.touched)" class="error-label">
+                    <div *ngIf="messageref.errors.required">
+                      Message is Required
+                    </div>
+                </div>
+
+            <div class="buttonsend">
+                <button ion-button  [disabled]="!contactForm.valid" >SEND</button>
+            </div>
+
+
+          </form>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-content>
+  

@@ -1,0 +1,151 @@
+<!--
+  Generated template for the NewshighlightPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<!-- <ion-header>
+  <ion-navbar>
+    <ion-title>News and Highlights</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+    <ion-grid>
+       
+        <ion-row *ngFor="let item of newsHiglight" (click)="gotoWebsite(item.link)">
+          <ion-col col-12 class="box-news">
+            <ion-col col-4>
+              <img [src]="item.thumbnail" class="img-news">
+            </ion-col>
+            <ion-col col-8 class="content-news">
+              <h3>{{item.title}}</h3>
+              <p>{{item.body}}</p>   
+            </ion-col>
+          </ion-col>
+   
+
+
+        </ion-row>
+
+        <ion-col col-12 class="">
+          <button ion-button (click)="gotoResources()">Download Codebase Resources</button>
+        </ion-col>
+            <ion-col col-5 class="follow-news"><h4>Follow Us:</h4></ion-col>
+            <ion-col col-7 class="social-news" href="#"><ion-icon name="logo-facebook"></ion-icon><ion-icon name="logo-instagram" href="#"></ion-icon></ion-col>
+        <ion-col col-12 class="">
+            <button ion-button (click)="contactus()">Get in touch with us</button>
+          </ion-col>
+      </ion-grid>
+
+
+
+</ion-content>
+
+ -->
+<ion-menu [content]="content">
+
+  <ion-content>
+    <div class="logo-digibanc">
+      <img src="../assets/imgs/digibanc-logo.png">
+    </div>
+
+    <ion-list>
+      <button ion-item (click)="contactus()" class="fa icomoon-send">
+        <span>Get In Touch</span>
+
+      </button>
+      <button ion-item (click)="gotoWebsite('http://www.codebtech.com/')" class="fa icomoon-global">
+
+        <span>Visit Website</span>
+      </button>
+
+    </ion-list>
+    <ion-footer class="footermenu">
+      <button ion-item (click)="openPage(homePage)" class="fa icomoon-linkedin">
+        <span>LinkedIn</span>
+
+      </button>
+      <button ion-item (click)="openPage(friendsPage)" class="fa icomoon-instagram-logo">
+
+        <span>Instagram</span>
+      </button>
+    </ion-footer>
+  </ion-content>
+</ion-menu>
+
+<ion-nav id="nav" #content [root]="rootPage"></ion-nav>
+<ion-header>
+
+  <ion-navbar>
+    <button ion-button menuToggle icon-only>
+      <ion-icon name='menu'></ion-icon>
+    </button>
+    <ion-title><img src="../assets/imgs/logocbt.png"></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <div class="heading">
+          <h2>News and Event’s</h2>
+        </div>
+
+        <ion-slides pager>
+
+          <ion-slide *ngFor="let item of newsHiglight" (click)="gotoWebsite(item.link)">
+            <div class="post-image">
+              <img [src]="item.thumbnail">
+            </div>
+            <div class="post-text">
+              <p>{{item.body}}</p>
+              <ion-row>
+                <ion-col col-9>
+                  <div class="date">
+                    <p>{{item.date}}</p>
+                  </div>
+
+                </ion-col>
+                <ion-col col-3>
+                  <div class="arrows">
+                    <ion-icon name="md-arrow-forward"></ion-icon>
+                  </div>
+
+                </ion-col>
+              </ion-row>
+            </div>
+
+
+          </ion-slide>
+
+
+        </ion-slides>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="download-row">
+      <ion-col>
+        <div class="heading">
+          <h2>Downloads</h2>
+        </div>
+        <div class="download-slider">
+          <div class="download-file" *ngFor="let item of resourcesCategory" (click)="gotodocListOrView(item.doc,item.categories)">
+            <span class="{{item.icon}}"></span>
+            <p>{{item.categories}}</p>
+          </div>
+
+
+        </div>
+
+
+
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,96 @@
+<!--
+  Generated template for the EmaildetailsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar><ion-title>Email this Document</ion-title></ion-navbar>
+</ion-header>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+          <ion-navbar>
+             
+            </ion-navbar>
+  <div class="mailimge">
+  <img src="./assets/imgs/maildocument.png">
+  <h2>Mail Documents</h2>
+  </div>
+            
+      <div class="form">
+          <ion-label stacked>Username</ion-label>
+          <ion-item>
+              
+              <ion-input type="text"></ion-input>
+            </ion-item>
+  
+            <ion-label stacked>Password</ion-label>
+            <ion-item>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+  
+            <ion-label stacked>Mobile No.</ion-label>
+            <ion-item>
+             
+              <ion-input type="tel"></ion-input>
+            </ion-item>
+            <div class="buttonsend">
+                <button ion-button>SEND</button>
+            </div>
+      </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  </ion-content>
+
+<!-- <ion-content>
+    <ion-grid>
+        <ion-row>
+          <ion-col col-12>
+            <p class="main-resource">Fill in the details below and send the<br />document to your email</p>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-12>
+              <ion-list>
+<form #emaildocForm="ngForm" (ngSubmit)="mailDoc(emaildocForm)">
+                  <ion-item>
+                    <ion-label floating>Name</ion-label>
+                    <ion-input type="text" name="name" #nameRef='ngModel' required [(ngModel)]="name"></ion-input>
+                  </ion-item>
+                  <div *ngIf="nameRef.errors && (nameRef.dirty || nameRef.touched)" class="error">
+                    <div *ngIf="nameRef.errors.required">
+                      Name is Required
+                    </div>
+                </div>
+                
+                  <ion-item>
+                    <ion-label floating>Email</ion-label>
+                    <ion-input type="email" name="email" #emailRef='ngModel' required [(ngModel)]="email"></ion-input>
+                  </ion-item>
+                  <div *ngIf="emailRef.errors && (emailRef.dirty || emailRef.touched)" class="error">
+                    <div *ngIf="emailRef.errors.required">
+                      Email is Required
+                    </div>
+                </div>
+                  
+                  <ion-item>
+                      <ion-label floating>Mobile Number</ion-label>
+                      <ion-input type="number" name="mobileno" #mobilenoRef='ngModel' required [(ngModel)]="mobileno"></ion-input>
+                  </ion-item>
+                  <div *ngIf="mobilenoRef.errors && (mobilenoRef.dirty || mobilenoRef.touched)" class="error">
+                    <div *ngIf="mobilenoRef.errors.required">
+                      Mobile Number is Required
+                    </div>
+                </div>
+                  
+                  <button ion-button [disabled]="!emaildocForm.valid" >Send</button>
+
+                </form>
+                </ion-list>
+          </ion-col>
+        </ion-row>
+      </ion-grid>    
+</ion-content> -->

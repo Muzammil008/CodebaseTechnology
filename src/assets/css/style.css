@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?w4xn62');
+  src:  url('fonts/icomoon.eot?w4xn62#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?w4xn62') format('truetype'),
+    url('fonts/icomoon.woff?w4xn62') format('woff'),
+    url('fonts/icomoon.svg?w4xn62#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icomoon-"], [class*=" icomoon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icomoon-instagram-logo:before {
+  content: "\e920";
+}
+.icomoon-linkedin:before {
+  content: "\e921";
+}
+.icomoon-send:before {
+  content: "\e91e";
+}
+.icomoon-global:before {
+  content: "\e91f";
+}
+.icomoon-call-center-girl:before {
+  content: "\e900";
+}
+.icomoon-chat:before {
+  content: "\e901";
+}
+.icomoon-cpu:before {
+  content: "\e902";
+}
+.icomoon-file:before {
+  content: "\e903";
+}
+.icomoon-trump:before {
+  content: "\e922";
+}
+.icomoon-handshake:before {
+  content: "\e91a";
+}
+.icomoon-strongbox:before {
+  content: "\e91b";
+}
+.icomoon-wallet:before {
+  content: "\e91c";
+}
+.icomoon-youtube:before {
+  content: "\e91d";
+}

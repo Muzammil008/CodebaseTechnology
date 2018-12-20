@@ -1,0 +1,40 @@
+[
+    {
+      "userId": 1,
+      "id": 1,
+      "date":"15 Sept 2018",
+      "thumbnail":"../assets/imgs/logocbt.png",
+      "title": "Lorem Ipsum is simply dummy text",
+      "link":"https://www.google.com.pk/",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+  
+    },
+    {
+      "userId": 1,
+      "id": 2,
+      "date":"10 Oct 2018",
+      "thumbnail":"../assets/imgs/news-cbt.png",
+      "title": "Lorem Ipsum is simply dummy text",
+      "link":"https://www.youtube.com/",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    },
+    {
+      "userId": 1,
+      "id": 3,
+      "date":"04 Aug 2018",
+      "thumbnail":"../assets/imgs/slider2.jpg",
+      "title": "Lorem Ipsum is simply dummy text",
+      "link":"https://www.google.com.pk/",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    },
+    {
+      "userId": 1,
+      "id": 4,
+      "date":"06 Nov 2018",
+      "thumbnail":"../assets/imgs/slider1.jpg",
+      "title": "Lorem Ipsum is simply dummy text.",
+      "link":"https://www.youtube.com/",
+      "body": "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old."
+    }
+  
+]

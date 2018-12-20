@@ -1,0 +1,59 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+.header img {
+    width: 80px;
+    margin-top: 6px;
+}
+@font-face {
+    font-family: 'Icomoon';
+    src: url('../assets/fonts/icomoon.eot');
+    src: url('../assets/fonts/icomoon.eot') format('embedded-opentype'),
+    url('../assets/fonts/icomoon.woff') format('woff'),
+    url('../assets/fonts/icomoon.ttf') format('truetype');
+}
+
+$color-main-heading:#353535;
+$color-para:#383838;
+$color-themes:#c1257f;
+$sec-color-themes:#e5553e;
+$color-main-background:linear-gradient(to right bottom, #c12480, #d22770, #de335e, #e5444d, #e7573b);
+
+$font-family-md-base: "Avenir-Roman";
+$font-size-para:16px;
+$font-size-mainheading:20px;
+
+.show-menu ion-content.content.content-md {
+    background-image: $color-main-background;
+}
+.bar-button-default-md, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #cbcbcc !important;
+    background-color: transparent;
+ 
+}
+.bar-button-default-ios, .bar-button-clear-md-default, .bar-button-md-default {
+    color: #cbcbcc !important;
+    background-color: transparent;
+    
+}
+.content-md {
+    color: #000;
+    background-color: #fefefe !important;
+}
+.content-ios {
+    color: #000;
+    background-color: #fefefe !important;
+}

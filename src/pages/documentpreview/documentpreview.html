@@ -1,0 +1,48 @@
+<!--
+  Generated template for the DocpreviewPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>Document Preview</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row class="gap"></ion-row>
+    {{url}}
+    <ion-row>
+      
+      <ion-col col-6><button ion-button (click)="downloadPdf()">Download</button></ion-col>
+      <ion-col col-6><button ion-button (click)="email()">Email</button></ion-col>
+    </ion-row>
+
+
+
+
+
+
+  </ion-grid>
+  <!-- <iframe style="width: 100%;height: 60%;" frameborder="0" allowfullscreen [src]="doclink | safe" ></iframe> -->
+  
+
+        <pdf-viewer 
+  [src]="doclink"
+  [show-all]="true"
+
+   [render-text]="true" 
+
+   [zoom]="1"
+
+   ></pdf-viewer>
+
+    
+    
+    
+
+
+</ion-content>

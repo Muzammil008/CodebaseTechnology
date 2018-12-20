@@ -1,0 +1,191 @@
+page-newshightlight {
+
+    .item-md {
+        padding-left: 16px;
+        padding-right: 0;
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: normal;
+        text-transform: none;
+        color: #fff;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+      .item-ios {
+        padding-left: 16px;
+        padding-right: 0;
+        position: relative;
+        font-size: 1.6rem;
+        font-weight: normal;
+        text-transform: none;
+        color: #fff;
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    
+      .logo-digibanc {
+        text-align: center;
+        padding: 20px;
+    
+        img {
+          width: 150px;
+        }
+      }
+    
+      button {
+    
+        &.fa {
+          font-size: 25px !important;
+          line-height: 0px !important;
+          border-bottom: 1px rgba(255, 255, 255, 0.38) solid;
+    
+          span {
+            padding-left: 10px;
+            font-size: 16px;
+            line-height: 56px;
+            font-family: $font-family-md-base;
+          }
+        }
+      }
+    
+      .label-md {
+        margin: 0px;
+      }
+    
+      .label-ios {
+        margin: 0px;
+      }
+    
+      .footermenu {
+        background: #414141;
+    
+        button.fa {
+          font-size: 20px !important;
+        }
+      }
+    
+      .list-md .item-block .item-inner {
+        border-bottom: 0px solid rgba(222, 222, 222, 0.45);
+      }
+    
+      .list-ios .item-block .item-inner {
+        border-bottom: 0px solid rgba(222, 222, 222, 0.45);
+      }
+    
+      .item-md.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 0px solid #dedede;
+      }
+    
+      .item-ios.item-block .item-inner {
+        padding-right: 8px;
+        border-bottom: 0px solid #dedede;
+      }
+    
+      .post-image img {
+        width: 100%;
+        height: 150px;
+        border-radius: 12px 12px 0px 0px;
+      }
+    
+      .post-text p {
+        font-size: $font-size-para;
+        text-align: left;
+        line-height: 20px;
+        color: $color-para;
+      }
+    
+      .date p {
+        margin: 0px;
+        text-align: left;
+        font-size: 13px;
+        color: $color-para;
+      }
+    
+      .arrows {
+        text-align: right;
+        color: $color-para;
+      }
+    
+      .heading h2 {
+        font-size: $font-size-mainheading;
+        margin-bottom: 0px;
+        font-weight: 600;
+        color: $color-main-heading;
+      }
+    
+      .slide-zoom {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+        margin: 0px 6px;
+      }
+    
+      .swiper-pagination-fraction,
+      .swiper-pagination-custom,
+      .swiper-container-horizontal>.swiper-pagination-bullets {
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+      }
+    
+      .swiper-pagination-bullet-active {
+        background: $color-themes;
+        opacity: 1;
+      }
+    
+      .post-text {
+        padding: 0px 10px 10px;
+      }
+    
+      .download-file {
+        text-align: center;
+        padding: 20px 15px;
+        width: 30%;
+        -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 12px;
+        margin: 10px;
+    
+        p {
+          font-size: $font-size-para;
+          color: $color-para;
+          margin: 0px;
+          padding-top: 10px;
+        }
+    
+        span {
+          font-size: 40px;
+          color: $color-themes;
+        }
+      }
+    
+      .download-slider {
+        display: -webkit-inline-box;
+        overflow-x: scroll;
+        width: 100%;
+      }
+    
+      ion-row.download-row.row {
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+    
+      .download-row h2 {
+        padding-bottom: 10px;
+      }
+      .icomoon-linkedin span {
+        position: relative;
+        top: 2px;
+    }
+    
+    
+    }
+    
+
