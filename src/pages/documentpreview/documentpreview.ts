@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams, Platform ,AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams, Platform, AlertController } from 'ionic-angular';
 import { DocmailPage } from '../docmail/docmail';
 import { DomSanitizer } from '@angular/platform-browser';
 import { InAppBrowser } from '@ionic-native/in-app-browser';
@@ -28,11 +28,12 @@ export class DocumentpreviewPage {
   ScriptUrl: any;
   url: string;
   zoom_to: any = 0.5;
-categoryName:string;
-  constructor(private nativePageTransitions: NativePageTransitions,private alertCtrl: AlertController,private trf: Transfer, private androidPermissions: AndroidPermissions, private platform: Platform, private file: File, private transfer: FileTransfer, private sanitizer: DomSanitizer, private iab: InAppBrowser, public navCtrl: NavController, public navParams: NavParams) {
+  categoryName: string;
+  resoucesCategory: any;
+  constructor(private nativePageTransitions: NativePageTransitions, private alertCtrl: AlertController, private trf: Transfer, private androidPermissions: AndroidPermissions, private platform: Platform, private file: File, private transfer: FileTransfer, private sanitizer: DomSanitizer, private iab: InAppBrowser, public navCtrl: NavController, public navParams: NavParams) {
 
-
-
+    this.resoucesCategory = this.navParams.data.resourceCategory;
+    console.log(this.resoucesCategory)
   }
   zoom_in() {
     this.zoom_to = this.zoom_to + 0.25;
@@ -46,11 +47,11 @@ categoryName:string;
   }
 
   ionViewDidLoad() {
-   
-    this.categoryName=this.navParams.data.resourceCategory
+
+    this.categoryName = this.navParams.data.resourceCategory
     this.doclink = this.navParams.data.doc[0].docLink;
     console.log(this.doclink)
-    console.log( this.navParams.data.resourceCategory)
+    console.log(this.navParams.data.resourceCategory)
     this.ScriptUrl = this.sanitizer.bypassSecurityTrustResourceUrl("http://4gaccounts.com/software/phpcode/index-ios.html")
     console.log('ionViewDidLoad DocumentpreviewPage');
   }
@@ -58,9 +59,9 @@ categoryName:string;
     let options: NativeTransitionOptions = {
       direction: 'up',
       duration: 600
-     };
+    };
     this.nativePageTransitions.curl(options);
-    this.navCtrl.push(DocmailPage, { doc: this.navParams.data.doc })
+    this.navCtrl.push(DocmailPage, { doc: this.navParams.data.doc, resourceCategory:this.navParams.data.resourceCategory })
   }
 
   openinAppBrowser() {
@@ -82,7 +83,7 @@ categoryName:string;
 
     const fileTransfer: FileTransferObject = this.transfer.create();
 
-    fileTransfer.download(this.doclink, this.file.externalDataDirectory +Math.floor(Math.random() * (999999 - 100000)) + 100000 +'-'+this.categoryName+".pdf").then((entry) => {
+    fileTransfer.download(this.doclink, this.file.externalDataDirectory + Math.floor(Math.random() * (999999 - 100000)) + 100000 + '-' + this.categoryName + ".pdf").then((entry) => {
       console.log('download complete: ' + entry.toURL());
       let alert = this.alertCtrl.create({
         title: 'Download PDF',
@@ -90,7 +91,7 @@ categoryName:string;
         buttons: ['OK']
       });
       alert.present();
-    
+
     }, (error) => {
 
       // handle error
@@ -104,5 +105,5 @@ categoryName:string;
 
 
 
-  
+
 }

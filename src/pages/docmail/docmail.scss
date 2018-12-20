@@ -77,4 +77,23 @@ page-docmail {
         border-color: #b2b2b2;
         background: transparent;
     }
+    .error-label {
+        color: #fff;
+        background: #c1257f;
+        position: relative;
+        padding: 4px;
+        border-radius: 3px;
+        font-size: 12px;
+        line-height: 1;
+        box-sizing: border-box;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 15px;
+            top: -6px;
+            border-bottom: 6px solid #c1257f;
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+        }
+    }
 }

@@ -30,7 +30,8 @@ import { DocumentpreviewPage } from '../pages/documentpreview/documentpreview';
 import { DocmailPage } from '../pages/docmail/docmail';
 
 import { PdfViewerModule } from 'ng2-pdf-viewer';
-
+import { Camera } from '@ionic-native/camera';
+import { EmailComposer } from '@ionic-native/email-composer';
 
 @NgModule({
   declarations: [
@@ -71,7 +72,8 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
     Transfer, TransferObject ,
     File,FileTransfer,DocumentViewer,
     AndroidPermissions,
-    NativePageTransitions,
+    NativePageTransitions,EmailComposer,
+    Camera,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CommunicatorProvider
   ]

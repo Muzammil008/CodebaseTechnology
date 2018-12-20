@@ -29,11 +29,14 @@
   
             <ion-label stacked >Email</ion-label>
             <ion-item>
-              <ion-input type="email" name="email" #emailref='ngModel'  required [(ngModel)]="email"></ion-input>
+              <ion-input type="email" name="email" #emailref='ngModel'  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  required [(ngModel)]="email"></ion-input>
             </ion-item>
             <div *ngIf="emailref.errors && (emailref.dirty || emailref.touched)" class="error-label">
                 <div *ngIf="emailref.errors.required">
                   Email is Required
+                </div>
+                <div *ngIf="emailref.errors && emailref.errors.pattern">
+                  Please Enter valid Email
                 </div>
             </div>
   

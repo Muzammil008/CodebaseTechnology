@@ -20,29 +20,61 @@
   </div>
             
       <div class="form">
+          <form #EmailForm="ngForm" (ngSubmit)="mailDoc(EmailForm)">
           <ion-label stacked>Username</ion-label>
           <ion-item>
               
-              <ion-input type="text"></ion-input>
+              <ion-input type="text"   name="username" #usernameref='ngModel'  required [(ngModel)]="username"></ion-input>
             </ion-item>
+            <div *ngIf="usernameref.errors && (usernameref.dirty || usernameref.touched)" class="error-label">
+                <div *ngIf="usernameref.errors.required">
+                  Username is Required
+                </div>
+            </div>
   
-            <ion-label stacked>Password</ion-label>
+            <!-- <ion-label stacked>Password</ion-label>
             <ion-item>
-              <ion-input type="password"></ion-input>
+              <ion-input type="password"  name="password" #passworderef='ngModel'  required [(ngModel)]="password"></ion-input>
             </ion-item>
-  
+            <div *ngIf="passworderef.errors && (passworderef.dirty || passworderef.touched)" class="error-label">
+                <div *ngIf="passworderef.errors.required">
+                  Password is Required
+                </div>
+            </div> -->
+            
+            <ion-label stacked >Email</ion-label>
+            <ion-item>
+              <ion-input type="email" name="email" #emailref='ngModel'  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required [(ngModel)]="email"></ion-input>
+            </ion-item>
+            <div *ngIf="emailref.errors && (emailref.dirty || emailref.touched)" class="error-label">
+                <div *ngIf="emailref.errors.required">
+                  Email is Required
+                </div>
+                <div *ngIf="emailref.errors && emailref.errors.pattern">
+                  Please Enter valid Email
+                </div>
+            </div>
+            
             <ion-label stacked>Mobile No.</ion-label>
             <ion-item>
              
-              <ion-input type="tel"></ion-input>
+              <ion-input type="tel" name="tel" #telref='ngModel'  required [(ngModel)]="tel"></ion-input>
             </ion-item>
-            <div class="buttonsend">
-                <button ion-button>SEND</button>
+            <div *ngIf="telref.errors && (telref.dirty || telref.touched)" class="error-label">
+                <div *ngIf="telref.errors.required">
+                    Mobile Number is Required
+                </div>
             </div>
+            <div class="buttonsend"  >
+                <button ion-button  [disabled]="!EmailForm.valid">SEND</button>
+            </div>
+          </form>
       </div>
       </ion-col>
     </ion-row>
+  
   </ion-grid>
+
   </ion-content>
 
 <!-- <ion-content>
